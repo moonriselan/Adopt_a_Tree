@@ -1,0 +1,166 @@
+//--------------------
+// TYPOGRAPHY
+@import './variables';
+//--------------------
+// TYPOGRAPHY: fonts: families
+.font-family-1 {
+    font-family: $font-family-1;
+}
+
+// -----------------
+// TYPOGRAPHY: fonts: sizes
+// E.G. font-size, font-size-sm, font-size-lg,
+
+
+//Sass Map to store font-sizes
+$font-sizes-map: (
+        "font-size": $font-size,
+        "font-size-sm": $font-size-sm,
+        "font-size-lg": $font-size-lg,
+);
+// @each Sass loop to generate classes
+@each $name, $value in $font-sizes-map {
+    .#{$name} {
+        font-size: $value;
+    }
+}
+
+//-------------
+//Typography: fonts: weights
+// e.G. font-regular, font-semi-bold, font-bold;
+
+//Sas-Map to store font weights
+$font-wights-map: (
+        "font-regular": $font-regular,
+        "font-semi-bold": $font-semi-bold,
+        "font-bold": $font-bold
+);
+
+
+//@each Sass loop to generate classes;
+@each $name, $value in $font-wights-map {
+    .#{$name} {
+        font-weight: $value;
+    }
+}
+
+// Typography: fonts: alignment
+.text-left {
+    text-align: left;
+
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+
+}
+
+.text-justify {
+    text-align: justify;
+
+}
+
+//--------------------
+//Typography: text
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+//----------------
+//Typography: html elements
+
+strong, b {
+    font-weight: $font-bold;
+
+}
+
+em, i {
+    font-style: italic;
+
+}
+
+// HTML Elements: Headings:
+$headings-sizes-map: (
+        "h1": $h1,
+        "h2": $h2,
+        "h3": $h3,
+        "h4": $h4,
+        "h5": $h5,
+        "h6": $h6,
+);
+
+//Sass loop
+@each $name, $value in $headings-sizes-map {
+    #{$name} {
+        font-size: $value;
+        color: $grey-coal;
+        font-weight: $font-semi-bold;
+        line-height: 1.2;
+        margin: 0 0 $spacing-2 0;
+    }
+}
+
+//HTML paragraphs
+p {
+    margin-bottom: $spacing;
+}
+
+//HTML Lists: ordered and unordered
+
+ul, ol {
+    list-style-position: inside;
+    margin-bottom: $spacing;
+    padding-left: $spacing;
+
+    li {
+        margin-bottom: $spacing;
+    }
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+
+//HTML links
+a, .link {
+    color: $color-link;
+    text-decoration: none;
+    cursor: pointer;
+    transition: $transition-linear;
+
+    &:hover {
+        color: $color-link-hover;
+    }
+
+
+    &:focus {
+        outline: 1px solid $color-focus;
+    }
+}
+.link-action {
+    color: $brand-2;
+    font-weight: $font-bold;
+}
+.link-action-icon {
+    color: $brand-1-light;
+    display: inline-block;
+    vertical-align: middle;
+}
+.link-action-text {
+    text-transform: uppercase;
+    vertical-align: middle;
+}
