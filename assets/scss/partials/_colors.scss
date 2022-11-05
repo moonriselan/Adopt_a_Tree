@@ -1,0 +1,45 @@
+//=======
+
+//Colors
+//-----------
+@import './variables';
+
+// ----------
+// Colors: classes
+//Generates classes for colors and background colors
+// Sass Map to store color values
+
+$colors-map: (
+        "brand-1": $brand-1,
+        "brand-1-light": $brand-1-light,
+        "brand-1-x-light": $brand-1-x-light,
+        "brand-2": $brand-2,
+        "brand-2-light": $brand-2-light,
+        "red-crimson": $red-crimson,
+        "blue-aqua": $blue-aqua,
+        "black": $black,
+        "gray-coal": $grey-coal,
+        "gray-lead": $grey-lead,
+        "gray-cement": $grey-cement,
+        "gray-titanium": $grey-titanium,
+        "gray-cloud": $grey-cloud,
+        "gray-mist": $grey-mist,
+        "white": $white,
+        "color-font": $color-font,
+        "color-link": $color-link,
+        "color-error": $color-error,
+        "color-success": $color-success,
+        "color-info": $color-info,
+        "color-disabled": $color-disabled,
+);
+
+// @each Sass loop to generate classes
+@each $name, $hex-value in $colors-map {
+    .#{$name} {
+        color: $hex-value;
+    }
+
+    .#{$name}-bg {
+        background-color: $hex-value;
+    }
+}
