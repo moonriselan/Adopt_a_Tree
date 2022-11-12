@@ -69,7 +69,7 @@
 //    - $color-border {string} : Border color
 //    - $color-placeholder {string} : Placeholder color
 
-@mixin form-text($color: $grey-coal, $color-bg: $white, $color-border: $color-input-border, $color-placeholder:$color-input-placeholder) {
+@mixin form-text($color: $grey-coal, $color-bg: $white, $color-border: $color-input-border, $color-placeholder: $color-input-placeholder) {
     color: $color;
     background-color: $color-bg;
     border: toRem(1px) solid $color-border;
@@ -77,17 +77,23 @@
     font-size: $font-size;
     font-family: $font-family-1;
     line-height: $line-height;
-    padding: $btn-padding-v  $btn-padding-h-sm;
+    padding: $btn-padding-v $btn-padding-h-sm;
     display: block;
     width: 100%;
     transition: $transition-linear;
+    box-sizing: border-box;
+    //&:focus-visible {
+   //     outline: none;
+    //}
 
     @include input-placeholder {
         color: $color-input-placeholder;
     }
 }
+
 .form-text {
     @include form-text;
+
     &--select {
         background-image: url("#{$svg-path}/icons/icon-chevron-down.svg");
         background-repeat: no-repeat;
@@ -97,8 +103,45 @@
     }
 
 }
+
 textarea {
     min-height: toRem(110px);
     resize: vertical;
 
+}
+
+// ---------------------------------------------
+// FORMS: INPUTS: GROUP
+// Use for text inputs and textareas with a label or icon that appears to be inside the input
+
+// Input Group Mixin
+//  - All parameters have defaults
+//  - Parameters:
+//    - $color {string} : Text color
+//    - $color-bg {string} : Background color
+//    - $color-border {string} : Border color
+
+@mixin input-group($color: $color-font, $color-bg: $white, $color-border: $color-input-border) {
+    color: $color;
+    background-color: $color-bg;
+    border: toRem(1px) solid $color-border;
+    border-radius: $border-radius-xl;
+    display: flex;
+}
+
+.input-group {
+    @include input-group;
+
+}
+
+.input-group-text {
+    @include form-text ($color-bg: transparent);
+    border: none;
+    }
+.input-group-label {
+    color: $grey-cement;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    padding: 0 ($spacing * 1.5);
+    align-self: center;
 }
