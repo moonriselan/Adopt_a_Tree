@@ -8,6 +8,7 @@
 .field {
     margin-bottom: $spacing-2;
 }
+
 //---------------------
 //FORMS: labels
 .label {
@@ -15,9 +16,11 @@
     font-weight: $font-bold;
     margin-bottom: $spacing;
     display: block;
+
     &--lg {
         font-size: $font-size-lg;
     }
+
     &--inverse {
         color: $white;
     }
@@ -43,13 +46,46 @@
     &:-ms-input-placeholder {
         @content;
     }
-    &::-webkit-input-placeholder{
+    &::-webkit-input-placeholder {
         @content;
     }
 }
+
 @mixin form-focus {
     outline: 0;
     border: toRem(1px) solid $color-focus;
     transition: $transition-linear;
+
+}
+
+// ---------------------------------------------
+// FORMS: TEXT INPUTS, TEXTAREAS, SELECTS
+
+// Form Styling: Text Inputs, Textareas, Selects: Mixin
+//  - All parameters have defaults
+//  - Parameters:
+//    - $color {string} : Text color
+//    - $color-bg {string} : Background color
+//    - $color-border {string} : Border color
+//    - $color-placeholder {string} : Placeholder color
+
+@mixin form-text($color: $grey-coal, $color-bg: $white, $color-border: $color-input-border, $color-placeholder:$color-input-placeholder) {
+    color: $color;
+    background-color: $color-bg;
+    border: toRem(1px) solid $color-border;
+    border-radius: $border-radius-xl;
+    font-size: $font-size;
+    font-family: $font-family-1;
+    line-height: $line-height;
+    padding: $btn-padding-v  $btn-padding-h-sm;
+    display: block;
+    width: 100%;
+    transition: $transition-linear;
+    @include input-placeholder {
+        color: $color-input-placeholder;
+    }
+}
+.form-text {
+    @include form-text;
 
 }
