@@ -274,7 +274,7 @@ ul {
     @include mq(md) {
         background-color: gold;
     }
-    @include mq(lgdupa) {
+    @include mq(lg) {
         background-color: green;
     }
 }
