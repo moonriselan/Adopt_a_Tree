@@ -4,6 +4,7 @@
 
 @import "partials/functions";
 @import "partials/variables";
+@import "partials/mixins";
 
 // Variables: Style Guide: Sidebar
 $styleguide-sidebar-width: toRem(200px);
@@ -157,7 +158,7 @@ $z-index-styleguide-menu: 1000;
 .styleguide-code-inline {
     font-family: "Inconsolata", monospace;
     background-color: $white;
-    padding: 0 math.div($spacing-half,2);
+    padding: 0 math.div($spacing-half, 2);
 }
 
 .styleguide-code-block {
@@ -263,11 +264,17 @@ ul {
     padding-left: 0;
 }
 
+.styleguide {
+    background: silver;
+    transition: all 3s;
 
-
-
-
-
-
-
-
+    @include mq(sm) {
+        background: red;
+    }
+    @include mq(md) {
+        background-color: gold;
+    }
+    @include mq(lgdupa) {
+        background-color: green;
+    }
+}
