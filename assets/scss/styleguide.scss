@@ -269,12 +269,12 @@ ul {
     transition: all 3s;
 
     @include mq(sm) {
-        background: red;
+        background-color: red;
     }
     @include mq(md) {
         background-color: gold;
     }
-    @include mq(lgdupa) {
+    @include mq(lg) {
         background-color: green;
     }
 }
