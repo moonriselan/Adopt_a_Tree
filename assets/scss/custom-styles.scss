@@ -1,0 +1,6 @@
+@import "./partials/variables";
+
+.content-block-overlay {
+    @extend .content-block;
+    background-color: rgba($brand-2, 0.5);
+}
