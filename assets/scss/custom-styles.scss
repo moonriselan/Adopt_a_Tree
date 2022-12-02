@@ -4,7 +4,27 @@
     @extend .content-block;
     background-color: rgba($brand-2, 0.5);
 }
-
-.spacing-2.white-bg{
+.list {
     text-shadow: 5px 5px 5px $grey-cement;
+    padding: $spacing-2;
+    background: white;
+}
+.earth-box{
+    background: white;
+    text-align: center;
+    padding: $spacing-2;
+    color: $grey-lead;
+    font-size: $font-size-lg;
+    font-weight: $font-semi-bold;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-2;
+   text-align: center;
+    background: white;
+
+
 }
