@@ -1,11 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adopt a Tree</title>
+    <title>Adopt-a-Tree</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -13,38 +16,37 @@
 <section class="container-sm">
     <div class="row">
         <div class="col">
-            <div class="gray-mist-bg">
-                <div class="row flex">
-                    <div class="col">
-                        <div class="spacing-2"><img src="assets/svg/logos/logo.svg" alt="Logo: Adopt-a-Tree" width="36"
-                                                    height="36" role="img"></div>
+            <div class="spacing-2-t spacing-2-r spacing-3-b spacing-2-l gray-mist-bg">
+                <div class="row flex flex-wrap spacing-2-b">
+                    <div class="col col-6 spacing-l">
+                        <img class="text-left" src="assets/svg/logos/logo.svg" alt="Logo: Adopt-a-Tree" width="36"
+                             height="36" role="img">
                     </div>
-                    <div class="col margin-left-auto">
-                        <h2 class="spacing-2 margin-reset">Tree Planting Projects</h2>
+                    <div class="col col-6 spacing-r">
+                        <p class="text-right black font-bold font-size-lg margin-reset">Tree Planting Projects </p>
                     </div>
                 </div>
-                <div class="field spacing-2-r spacing-3-l margin-reset">
-                    <label for="demo-select" class="label"></label>
-                    <select class="form-text form-text--select" id="demo-select">
-                        <option value="" disabled selected>FILTER</option>
-                        <option value="water-conservation">Water Conservation</option>
-                        <option value="biodiversity-hotspot">Biodiversity Hotspot</option>
-                        <option value="wildlife-zone">Wildlife Zone</option>
-                    </select>
+                <div class="field margin-left-auto" style="width: 250px;">
+                    <label>
+                        <select class="form-text form-text--select">
+                            <option value="water-conservation">FILTER</option>
+                            <option value="water-conservation">Water Conservation</option>
+                            <option value="biodiversity-hotspot">Biodiversity Hotspot</option>
+                            <option value="wildlife-zone">Wildlife Zone</option>
+                        </select>
+                    </label>
                 </div>
-            </div>
-            <div class="gray-mist-bg spacing-3-h spacing-2-b spacing-2-t ">
-                <div class="card">
+                <div class="card center-element" style="width: 500px;">
                     <div class="card-banner">
                         <div class="overlay overlay--card-banner"></div>
-                        <img src="assets/img/fern-hands-600px.jpg" alt="Fern hands" width="600"
-                             height="400" class="card-banner-img">
+                        <img src="assets/img/fern-hands-600px.jpg" alt="Tree Planting at Borneo" width="600"
+                             height="450" class="card-banner-img">
                         <div class="card-banner-content">
                             <div class="row-sm flex">
                                 <div class="col-sm card-location">
                                     <span class="at-icon-map icon-left" aria-hidden="true"></span>
                                     <span class="show-on-screen-readers">Location:</span>
-                                    <span class="font-size-sm font-bold">Burundi, Africa</span>
+                                    <span class="font-size-sm font-bold">Borneo, Indonesia</span>
                                 </div>
                                 <div class="col-sm card-tree-cost">
                                     <span class="at-icon-dollar font-size-sm" aria-hidden="true"></span>
@@ -53,7 +55,7 @@
                                     <span class="at-icon-leaf icon-right" aria-hidden="true"></span>
                                 </div>
                             </div>
-                            <div class="card-banner-title">Greening of abandoned copper mine</div>
+                            <div class="card-banner-title">Afforestation near Coastal Forest</div>
                             <div class="card-banner-icons">
                                 <span class="at-icon-droplet card-banner-icon" title="Water Conservation"
                                       aria-hidden="true"></span>
@@ -87,8 +89,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="spacing-2-t">
-                    <div class="card">
+                <div class="spacing-2-t spacing-2-b">
+                    <div class="card center-element" style="width: 500px;">
                         <div class="card-banner">
                             <div class="overlay overlay--card-banner"></div>
                             <img src="assets/img/borneo-tree-planting-600px.jpg" alt="Tree Planting at Borneo"
@@ -115,6 +117,9 @@
                                     <span class="at-icon-paw card-banner-icon" title="Wildlife Zone"
                                           aria-hidden="true"></span>
                                     <span class="show-on-screen-readers">Wildlife Zone</span>
+                                    <span class="at-icon-atom card-banner-icon" title="Carbon Sink"
+                                          aria-hidden="true"></span>
+                                    <span class="show-on-screen-readers">Carbon Sink</span>
                                 </div>
                             </div>
                         </div>
@@ -139,6 +144,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="spacing-2 icon-size-xxl text-center white-bg">
+                <span class="at-icon-home spacing-3-r gray-titanium"></span>
+                <span class="at-icon-leaf spacing-3-r spacing-3-l gray-lead"></span>
+                <span class="at-icon-cart spacing-3-r spacing-3-l gray-titanium"></span>
+                <span class="at-icon-user spacing-3-l gray-titanium"></span>
             </div>
         </div>
     </div>
