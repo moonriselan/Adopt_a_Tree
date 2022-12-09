@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="assets/js/libs/tabby.js"></script>
+    <script src="assets/js/input-file-custom.js"></script>
 </head>
 <body>
 
@@ -34,9 +36,9 @@
             <div class="spacing-2 white-bg">
                 <ul class="tab-block flex-justify-center spacing-2-b" data-tabs="">
                     <li class="tab-each">
-                        <a href="#tab-projects" class="tab-each-anchor brand-2-bg" data-tabby-default="">
-                            <span class="at-icon-leaf icon-left-lg white" aria-hidden="true"></span>
-                            <span class="white">Projects</span>
+                        <a href="#tab-projects" class="tab-each-anchor" data-tabby-default="">
+                            <span class="at-icon-leaf icon-left-lg" aria-hidden="true"></span>
+                            <span>Projects</span>
                         </a>
                     </li>
                     <li class="tab-each">
@@ -52,6 +54,22 @@
                         </a>
                     </li>
                 </ul>
+
+                <div id="tab-projects" class="spacing-v">
+                    Content: Projects
+                </div>
+                <div id="tab-payment" class="spacing-v">
+                    Content: Payment
+                </div>
+                <div id="tab-profile" class="spacing-v">
+                    Content: Profile
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var tabs = new Tabby('[data-tabs]');
+                    });
+                </script>
                 <ul class="list-block list-reset">
                     <li class="list-each">
                         <div class="content-block">
@@ -157,11 +175,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="spacing-2 icon-size-xxl text-center white-bg">
-                <span class="at-icon-home spacing-3-r gray-titanium"></span>
-                <span class="at-icon-leaf spacing-3-r spacing-3-l gray-titanium"></span>
-                <span class="at-icon-cart spacing-3-r spacing-3-l gray-titanium"></span>
-                <span class="at-icon-user spacing-3-l gray-lead"></span>
+            <div class="spacing-2 icon-size-xxl flex white-bg">
+                <span class="at-icon-home spacing-3-r gray-titanium margin-right-auto"></span>
+                <span class="at-icon-leaf spacing-3-r spacing-3-l gray-titanium margin-right-auto margin-left-auto"></span>
+                <span class="at-icon-cart spacing-3-r spacing-3-l gray-titanium margin-right-auto margin-left-auto"></span>
+                <span class="at-icon-user spacing-3-l gray-lead margin-left-auto"></span>
             </div>
             <br>
             <div class="spacing-2 brand-1-bg">
@@ -188,9 +206,9 @@
                         </a>
                     </li>
                     <li class="tab-each">
-                        <a href="#tab-payment" class="tab-each-anchor brand-2-bg">
-                            <span class="at-icon-card icon-left-lg white" aria-hidden="true"></span>
-                            <span class="white">Payment</span>
+                        <a href="#tab-payment" class="tab-each-anchor">
+                            <span class="at-icon-card icon-left-lg" aria-hidden="true"></span>
+                            <span>Payment</span>
                         </a>
                     </li>
                     <li class="tab-each">
@@ -200,6 +218,22 @@
                         </a>
                     </li>
                 </ul>
+
+                <div id="tab-projects2" class="spacing-v">
+                    Content: Projects
+                </div>
+                <div id="tab-payment2" class="spacing-v">
+                    Content: Payment
+                </div>
+                <div id="tab-profile2" class="spacing-v">
+                    Content: Profile
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var tabs = new Tabby('[data-tabs]');
+                    });
+                </script>
                 <div class="white-bg">
                     <div class="field">
                         <label for="demo-input-default" class="label text-center font-size-lg">Add Credit Card</label>
@@ -242,12 +276,197 @@
                         <button class="btn btn--brand-2 full-width spacing-2-b" tabindex="0" role="button">Save Changes</button>
                     </div>
                 </div>
-                <div class="spacing-2 icon-size-xxl text-center white-bg">
-                    <span class="at-icon-home spacing-3-r gray-titanium"></span>
-                    <span class="at-icon-leaf spacing-3-r spacing-3-l gray-titanium"></span>
-                    <span class="at-icon-cart spacing-3-r spacing-3-l gray-titanium"></span>
-                    <span class="at-icon-user spacing-3-l gray-lead"></span>
+                <div class="spacing-2 icon-size-xxl flex white-bg">
+                    <span class="at-icon-home spacing-3-r gray-titanium margin-right-auto"></span>
+                    <span class="at-icon-leaf spacing-3-r spacing-3-l gray-titanium margin-right-auto margin-left-auto"></span>
+                    <span class="at-icon-cart spacing-3-r spacing-3-l gray-titanium margin-right-auto margin-left-auto"></span>
+                    <span class="at-icon-user spacing-3-l gray-lead margin-left-auto"></span>
                 </div>
+            </div>
+            <br>
+            <div class="spacing-2 brand-1-bg">
+                <div class="row flex flex-wrap">
+                    <div class="col col-6 spacing-l">
+                        <img src="assets/svg/logos/logo-white.svg" alt="Logo: Adopt-a-Tree" width="36" height="36" role="img">
+                    </div>
+                </div>
+                <div class="avatar text-center white spacing-3-b">
+                    <img src="assets/img/avatar/avatar-user.jpg" alt="Jenn Davis" width="144" height="144" class="avatar-img">
+                    <div class="avatar-username">Jenn Davis</div>
+                    <div class="avatar-meta-info">
+                        <div class="spacing-b">4 Projects / 212 Trees</div>
+                        <div class="font-size-sm">Treehugger since Mar 10, 2017</div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacing-2-t spacing-2-r spacing-2-l spacing-3-b white-bg">
+                <ul class="tab-block flex-justify-center spacing-2-b" data-tabs="">
+                    <li class="tab-each">
+                        <a href="#tab-projects" class="tab-each-anchor" data-tabby-default="">
+                            <span class="at-icon-leaf icon-left-lg" aria-hidden="true"></span>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="tab-each">
+                        <a href="#tab-payment" class="tab-each-anchor">
+                            <span class="at-icon-card icon-left-lg" aria-hidden="true"></span>
+                            <span>Payment</span>
+                        </a>
+                    </li>
+                    <li class="tab-each">
+                        <a href="#tab-profile" class="tab-each-anchor">
+                            <span class="at-icon-user icon-left-lg" aria-hidden="true"></span>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div id="tab-projects3" class="spacing-v">
+                    Content: Projects
+                </div>
+                <div id="tab-payment3" class="spacing-v">
+                    Content: Payment
+                </div>
+                <div id="tab-profile3" class="spacing-v">
+                    Content: Profile
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var tabs = new Tabby('[data-tabs]');
+                    });
+                </script>
+
+                <ul class="list-block list-reset">
+                    <li class="list-each">
+                        <div class="content-block">
+                            <div class="flex">
+                                <div class="col">
+                                    <div class="font-size gray-lead">VISA ending in 2841</div>
+                                    <div class="font-size gray-lead spacing-b">Expires: 12/2030</div>
+                                    <div class="font-bold black font-size">Billing Address</div>
+                                    <div class="font-size gray-lead">Jenn Davis</div>
+                                    <div class="font-size gray-lead">7181 Howard St.</div>
+                                    <div class="font-size gray-lead">Atwater, CA 95301</div>
+
+                                </div>
+                                <div class="col margin-left-auto">
+                                    <div class="at-icon-card icon-size-xxl text-right spacing-b black" aria-hidden="true"></div>
+                                    <div class="row">
+                                        <a href="" class="text-underline spacing-r brand-2">edit</a>
+                                        <a href="" class="text-underline brand-2">delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="spacing-2 icon-size-xxl flex white-bg">
+                <span class="at-icon-home spacing-3-r gray-titanium margin-right-auto"></span>
+                <span class="at-icon-leaf spacing-3-r spacing-3-l gray-titanium margin-right-auto margin-left-auto"></span>
+                <span class="at-icon-cart spacing-3-r spacing-3-l gray-titanium margin-right-auto margin-left-auto"></span>
+                <span class="at-icon-user spacing-3-l gray-lead margin-left-auto"></span>
+            </div>
+            <br>
+            <div class="spacing-2 brand-1-bg">
+                <div class="row flex flex-wrap">
+                    <div class="col col-6 spacing-l">
+                        <img src="assets/svg/logos/logo-white.svg" alt="Logo: Adopt-a-Tree" width="36" height="36" role="img">
+                    </div>
+                </div>
+                <div class="avatar text-center white spacing-3-b">
+                    <img src="assets/img/avatar/avatar-user.jpg" alt="Jenn Davis" width="144" height="144" class="avatar-img">
+                    <div class="avatar-username">Jenn Davis</div>
+                    <div class="avatar-meta-info">
+                        <div class="spacing-b">4 Projects / 212 Trees</div>
+                        <div class="font-size-sm">Treehugger since Mar 10, 2017</div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacing-2-t spacing-2-r spacing-2-l spacing-3-b white-bg">
+                <ul class="tab-block flex-justify-center spacing-2-b" data-tabs="">
+                    <li class="tab-each">
+                        <a href="#tab-projects5" class="tab-each-anchor" data-tabby-default="">
+                            <span class="at-icon-leaf icon-left-lg" aria-hidden="true"></span>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="tab-each">
+                        <a href="#tab-payment5" class="tab-each-anchor">
+                            <span class="at-icon-card icon-left-lg" aria-hidden="true"></span>
+                            <span>Payment</span>
+                        </a>
+                    </li>
+                    <li class="tab-each">
+                        <a href="#tab-profil5" class="tab-each-anchor">
+                            <span class="at-icon-user icon-left-lg" aria-hidden="true"></span>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div id="tab-projects5" class="spacing-v">
+                    Content: Projects
+                </div>
+                <div id="tab-payment5" class="spacing-v">
+                    Content: Payment
+                </div>
+                <div id="tab-profile5" class="spacing-v">
+                    Content: Profile
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var tabs = new Tabby('[data-tabs]');
+                    });
+                </script>
+                <div class="field spacing-2-t spacing-2-b text-center margin-reset">
+                    <input type="file" accept="image/*" id="js-demo-input-file" class="input-file">
+                    <label for="js-demo-input-file" class="btn btn--brand-1 input-file-label">
+                        <img src="assets/img/avatar/avatar-user.jpg" alt="" class="input-file-img" id="js-demo-input-file-image" width="44" height="44" role="img">Upload Photo
+                    </label>
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        document.getElementById("js-demo-input-file").addEventListener("change", function() {
+                            readURL(this, "js-demo-input-file-image");
+                        });
+                    });
+                </script>
+                <div>
+                    <div class="field spacing-2-b margin-reset">
+                        <div class="input-group">
+                            <input type="text" class="input-group-text" placeholder="" id="demo-input-label-group2">
+                            <label for="demo-input-label-group2" class="input-group-label font-size-xs input-group-text text-right">First Name</label>
+                        </div>
+                    </div>
+                    <div class="field spacing-2-b margin-reset">
+                        <div class="input-group">
+                            <input type="text" class="input-group-text" placeholder="" id="demo-input-label-group3">
+                            <label for="demo-input-label-group3" class="input-group-label font-size-xs input-group-text text-right">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="field spacing-2-b margin-reset">
+                        <div class="input-group">
+                            <input type="email" class="input-group-text" placeholder="" id="demo-input-label-group4">
+                            <label for="demo-input-label-group4" class="input-group-label font-size-xs input-group-text text-right">Email ID</label>
+                        </div>
+                    </div>
+                    <div class="field margin-reset">
+                        <textarea class="form-text" id="demo-textarea-default" placeholder=""></textarea>
+                        <label for="demo-textarea-default" class="input-group-label"></label>
+                    </div>
+                    <button class="btn btn--brand-2 full-width" tabindex="0" role="button">Save Changes</button>
+                </div>
+            </div>
+            <div class="spacing-2 icon-size-xxl flex white-bg">
+                <span class="at-icon-home spacing-3-r gray-titanium margin-right-auto"></span>
+                <span class="at-icon-leaf spacing-3-r spacing-3-l gray-titanium margin-right-auto margin-left-auto"></span>
+                <span class="at-icon-cart spacing-3-r spacing-3-l gray-titanium margin-right-auto margin-left-auto"></span>
+                <span class="at-icon-user spacing-3-l gray-lead margin-left-auto"></span>
             </div>
 
         </div>
